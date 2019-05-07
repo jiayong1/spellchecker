@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# In[71]:
-
-
 #Created by Jiayong Lin
 import numpy as np
 import pandas as pd
@@ -16,15 +13,12 @@ def difference(incorrect,correct):
         for i,s in enumerate(difflib.ndiff(incorrect, correct)):
             if s[0] == '+':
                 return correct[i], "-"
-                break
             if s[0] == '-':
                 return correct[i], incorrect[i]
-                break
     else:
         for i,s in enumerate(difflib.ndiff(incorrect, correct)):
             if s[0] != ' ':
                 return "-", incorrect[i]
-                break
 
 
 f = open("misspelling.txt", "r")

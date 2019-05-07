@@ -1,11 +1,10 @@
-#!/usr/bin/env python2
 # Based on Nick Sweeting's Repo
-# Modified by Henguo Li
+# Modified by Hengduo Li, Hanyu Wang
 # python spellchecker
 
 import re
 import collections
-from itertools import product, imap
+from itertools import product
 
 VERBOSE = True
 SYSTEM_DICTIONARY = '/usr/share/dict/words'
@@ -17,7 +16,8 @@ import pdb
 ### IO
 
 def log(*args):
-    if VERBOSE: print ''.join([str(x) for x in args])
+    if VERBOSE: 
+        print(''.join([str(x) for x in args]))
 
 def words(text):
     """filter body of text for words"""
@@ -32,7 +32,7 @@ def train(text, model=None):
 
 def train_from_files(file_list, model=None):
     for f in file_list:
-        model = train(file(f).read(), model)
+        model = train(open(f).read(), model)
     return model
 
 ### UTILITY FUNCTIONS
@@ -49,7 +49,7 @@ def numberofdupes(string, idx):
 def hamming_distance(word1, word2):
     if word1 == word2:
         return 0
-    dist = sum(imap(str.__ne__, word1[:len(word2)], word2[:len(word1)]))
+    dist = sum(map(str.__ne__, word1[:len(word2)], word2[:len(word1)]))
     dist = max([word2, word1]) if not dist else dist+abs(len(word2)-len(word1))
     return dist
 
@@ -80,7 +80,7 @@ def reductions(word):
         # if letter appears more than once in a row
         if n:
             # generate a flat list of options ('hhh' becomes ['h','hh','hhh'])
-            flat_dupes = [l*(r+1) for r in xrange(n+1)][:3] # only take up to 3, there are no 4 letter repetitions in english
+            flat_dupes = [l*(r+1) for r in range(n+1)][:3] # only take up to 3, there are no 4 letter repetitions in english
             # remove duplicate letters in original word
             for _ in range(n):
                 word.pop(idx+1)
@@ -135,26 +135,27 @@ def suggestions(word, real_words, short_circuit=True):
 
 ################################################################################################
 
-# train this global model
-word_model_g = train(file(SYSTEM_DICTIONARY).read())
-word_model_g = train_from_files(['./data/sherlockholmes.txt','./data/lemmas.txt',], word_model_g)
-real_words_g = set(word_model_g)
 
-
-def give_suggestions(word):
+def give_suggestions(word, short_circuit=True):
     """
     Give rough suggestions of possible correct words given an input.
     Return the list of suggestions.
     """
-    global real_words_g
-    suggested_words = suggestions(word, real_words_g, short_circuit=True)
+
+    # train this global model
+    word_model_g = train(open(SYSTEM_DICTIONARY).read())
+    word_model_g = train_from_files(['./data/sherlockholmes.txt', './data/lemmas.txt', ], word_model_g)
+    real_words_g = set(word_model_g)
+    # global real_words_g
+    suggested_words = suggestions(word, real_words_g, short_circuit=short_circuit)
     return suggested_words
 
 
 if __name__ == '__main__':
     while True:
-        word = str(raw_input('>'))
-        short_circuit_result = give_suggestions(word)
-        print short_circuit_result
+        word = str(input('>'))
+        short_circuit_result = give_suggestions(word, False)
+        print(short_circuit_result)
+        print(len(short_circuit_result))
 
 
