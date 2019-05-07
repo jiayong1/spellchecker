@@ -1,7 +1,8 @@
 # Created by Hanyu Wang
 
+import collections
 import numpy as np
-from spellchecker import give_suggestions
+import spellchecker
 
 
 def load_score_mat(path='scorematrix.npy'):
@@ -16,6 +17,20 @@ def load_score_mat(path='scorematrix.npy'):
             score[alphabet[i], alphabet[j]] = mat[i, j]
 
     return score
+
+
+def load_freq_dict(path='frequency_dictionary_en_82_765.txt'):
+    # https://github.com/wolfgarbe/SymSpell/blob/master/SymSpell/frequency_dictionary_en_82_765.txt
+    freq_dict = {}
+    with open(path, 'r') as f:
+        for line in f:
+            word, num = line.strip('\ufeff \n').split()
+            freq_dict[word] = int(num)
+
+    mean_freq = int(sum(freq_dict.values())/len(freq_dict))
+    freq_dfdict = collections.defaultdict(lambda: mean_freq)
+    freq_dfdict.update(freq_dict)
+    return freq_dfdict
 
 
 def align(a:str, b:str, sigma:int, score:dict) -> int:
@@ -41,8 +56,14 @@ def align(a:str, b:str, sigma:int, score:dict) -> int:
     
     return pool[end][0]
 
-def final_suggestions(word:str, sug:set, score, topk=3, sigma=5) -> list:
+def final_suggestions(word:str, sug:set, score, topk=3, sigma=5, freq_dict=None) -> list:
+    # If freq_dict is None, do not apply Bayes rule.
     candidates = [(p_word, align(word, p_word, sigma=sigma, score=score)) for p_word in sug]
+
+    if freq_dict is not None:
+        freq_sum = sum(freq_dict[x[0]] for x in candidates)
+        candidates = [(x[0], x[1]*freq_dict[x[0]]/freq_sum) for x in candidates]
+
     return sorted(candidates, key=lambda x: x[1], reverse=True)[:topk]
 
 
@@ -73,9 +94,11 @@ def backtrace(pool:dict, a, b):
 
 if __name__ == "__main__":
     score = load_score_mat()
+    freq_dict = load_freq_dict()
     while True:
         word = str(input('>'))
-        sug = give_suggestions(word, False)
-        fs = final_suggestions(word, sug, score, topk=10, sigma=5)
+        sug = spellchecker.give_suggestions(word, False)
+        # feed freq_dict into final_suggestions() to enable Bayes optimization
+        fs = final_suggestions(word, sug, score, topk=10, sigma=5, freq_dict=freq_dict)
         print(fs)
 

@@ -142,13 +142,15 @@ def give_suggestions(word, short_circuit=True):
     Return the list of suggestions.
     """
 
-    # train this global model
-    word_model_g = train(open(SYSTEM_DICTIONARY).read())
-    word_model_g = train_from_files(['./data/sherlockholmes.txt', './data/lemmas.txt', ], word_model_g)
-    real_words_g = set(word_model_g)
-    # global real_words_g
+    global real_words_g
     suggested_words = suggestions(word, real_words_g, short_circuit=short_circuit)
     return suggested_words
+
+
+# train this global model
+word_model_g = train(open(SYSTEM_DICTIONARY).read())
+word_model_g = train_from_files(['./data/sherlockholmes.txt', './data/lemmas.txt', ], word_model_g)
+real_words_g = set(word_model_g)
 
 
 if __name__ == '__main__':
