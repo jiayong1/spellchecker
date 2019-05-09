@@ -19,7 +19,7 @@ def load_score_mat(path='scorematrix.npy'):
     return score
 
 
-def load_freq_dict(path='frequency_dictionary_en_82_765.txt'):
+def load_freq_dict(path='data/frequency_dictionary_en_82_765.txt'):
     # https://github.com/wolfgarbe/SymSpell/blob/master/SymSpell/frequency_dictionary_en_82_765.txt
     freq_dict = {}
     with open(path, 'r') as f:

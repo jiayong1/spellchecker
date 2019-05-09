@@ -21,7 +21,7 @@ def difference(incorrect,correct):
                 return "-", incorrect[i]
 
 
-f = open("misspelling.txt", "r")
+f = open("data/misspelling.txt", "r")
 letters = "abcdefghijklmnopqrstuvwxyz"
 correct = ""
 scorematrix = np.zeros((26, 26))
