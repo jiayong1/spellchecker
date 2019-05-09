@@ -2,8 +2,9 @@
 # Modified by Hengduo Li, Hanyu Wang
 # python spellchecker
 
-import re
 import collections
+import pdb
+import re
 from itertools import product
 
 VERBOSE = True
@@ -11,7 +12,6 @@ SYSTEM_DICTIONARY = '/usr/share/dict/words'
 vowels = set('aeiouy')
 alphabet = set('abcdefghijklmnopqrstuvwxyz')
 
-import pdb
 
 ### IO
 
@@ -159,5 +159,3 @@ if __name__ == '__main__':
         short_circuit_result = give_suggestions(word, False)
         print(short_circuit_result)
         print(len(short_circuit_result))
-
-
