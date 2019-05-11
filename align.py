@@ -38,7 +38,9 @@ class Aligner:
         with open(path, 'r') as f:
             for line in f:
                 word, num = line.strip('\ufeff \n').split()
-                freq_dict[word] = int(num)
+                # freq_dict[word] = int(num)
+                freq_dict[word] = np.log(int(num))
+
 
         mean_freq = int(sum(freq_dict.values())/len(freq_dict))
         freq_dfdict = collections.defaultdict(lambda: mean_freq)
@@ -78,7 +80,7 @@ class Aligner:
 
         if freq_dict is not None:
             freq_sum = sum(freq_dict[x[0]] for x in candidates)
-            candidates = [(x[0], x[1]*freq_dict[x[0]]/freq_sum) for x in candidates]
+            candidates = [(x[0], x[1]*(freq_dict[x[0]]/freq_sum)) for x in candidates]
 
         return sorted(candidates, key=lambda x: x[1], reverse=True)[:topk]
 
