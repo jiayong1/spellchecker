@@ -10,6 +10,9 @@ def get_parser():
     parser.add_argument('--noBayes', action='store_false', dest='bayes',
                         default=True,
                         help='don\'t apply Bayes rule.')
+    parser.add_argument('-v', '--verbose', action='store_true', dest='verbose',
+                        default=False,
+                        help='verbose')
     return parser
 
 
@@ -27,7 +30,10 @@ def main():
             # feed freq_dict into final_suggestions() to enable Bayes optimization
             fs = checker.give_suggestions(word, opts.topk)
             print('Possible word(s):')
-            print(', '.join(x[0] for x in fs))
+            if opts.verbose:
+                print(fs)
+            else:    
+                print(', '.join(x[0] for x in fs))
 
 
 if __name__ == '__main__':
