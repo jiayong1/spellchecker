@@ -1,6 +1,7 @@
 import argparse
 from checker_backend import SpellChecker
 from align import Aligner
+from tqdm import tqdm
 
 
 def get_parser():
@@ -25,35 +26,34 @@ def main():
     checker = SpellChecker(Aligner(opts.sigma, opts.bayes))
     alphabet = set('abcdefghijklmnopqrstuvwxyz')
 
-    f = open("data/misspelling.txt", "r")
+    f = open("data/testdata.txt", "r")
     top1=top2=top3 = 0
     allpairs = 0
-    for i in f:
-        if i[0] =="$":
-            correct = i[1:].lower()
-        else:
-            if not (set(i.lower().strip()) - alphabet) and correct.strip() in double_variants(i.lower().strip()):
-                allpairs += 1
-                if(i.lower() != correct):
-                    fs = checker.give_suggestions(i.lower().strip(), opts.topk)
-                    if fs is not None:
-                        resultlist = [row[0] for row in fs]
-                        if correct.strip() == resultlist[0]:
-                            top1 += 1 
-                            top2 += 1
-                            top3 += 1
-                        elif len(resultlist) >= 2 and correct.strip() == resultlist[1] :
-                            top2 += 1
-                            top3 += 1
-                        elif len(resultlist) == 3 and correct.strip() == resultlist[2] :
-                            top3 += 1
+    for i in tqdm(f):
+        correct = i.strip().split(" ")[0]
+        mis =  i.strip().split(" ")[1]
+
+        
+        allpairs += 1
+        fs = checker.give_suggestions(mis, opts.topk)
+        if fs is not None:
+            resultlist = [row[0] for row in fs]
+            if correct.strip() == resultlist[0]:
+                top1 += 1 
+                top2 += 1
+                top3 += 1
+            elif len(resultlist) >= 2 and correct.strip() == resultlist[1] :
+                top2 += 1
+                top3 += 1
+            elif len(resultlist) == 3 and correct.strip() == resultlist[2] :
+                top3 += 1
 
 
 
-                        print(top1 / allpairs)
-                        print(top2 / allpairs)
-                        print(top3 / allpairs)
-                        print("--------------------")
+    print(top1 / allpairs)
+    print(top2 / allpairs)
+    print(top3 / allpairs)
+    print("--------------------")
 
 
 
