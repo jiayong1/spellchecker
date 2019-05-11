@@ -18,7 +18,7 @@ for i in tqdm(f):
 	if i[0] =="$":
 		correct = i[1:].lower().strip()
 	else:
-		if not (set(i.lower().strip()) - alphabet) and edit_distance(correct, i.lower().strip()) <= 2:
+		if not (set(i.lower().strip()) - alphabet) and not (set(correct) - alphabet) and 0 < edit_distance(correct, i.lower().strip()) <= 2:
 			data = data.append({'Correct': correct, 'Misspelling':i.lower().strip()},ignore_index=True)
 
 data.to_csv( path_or_buf = 'data/testdata.txt' ,sep=' ', index=False, header=False )

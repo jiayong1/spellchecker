@@ -3,7 +3,6 @@ america amercia
 american ameracan
 april apirl
 austrian austrain
-badcock's badcock
 cambridge cambrige
 canada canda
 chautauqua chatacqua
@@ -19,7 +18,6 @@ chautauqua catauqua
 chautauqua chataqua
 chautauqua chatauqua
 chautauqua chautaucua
-chautauqua chautauqua
 christ crist
 christian christain
 christmas chrismas
@@ -30,7 +28,6 @@ cinderella cinderrella
 december decmber
 december desember
 dr doc
-dunstan's dunstan
 easter ester
 easter ester
 eastwood estwood
@@ -43,27 +40,20 @@ french franch
 french fench
 french freach
 friday firday
-hallowe'en hallowen
 hitler hitlar
 i a
 i he
-i i
 i if
 i is
 i it
 i iy
 i ld
 i we
-i'll ile
-i'll ill
-i'm im
-i've iev
 ireland irland
 irish iresh
 january januery
 july jaly
 june jun
-luke's luks
 mayfield mayfeild
 mediterranean meditterranean
 miss mis
@@ -94,23 +84,12 @@ victorian vitiorian
 wednesday wedensday
 wednesday wensday
 welsh wesh
-x-rays exrays
 a i
 a ah
 a an
 a and
 a are
 a as
-a-quiver aquiver
-a_bit abit
-a_few afew
-a_little alittle
-a_long along
-a_look alook
-a_lot alot
-a_lot alote
-a_lot lot
-a_museum amusum
 abattoir abbatoir
 abhorrence abhorence
 ability abbility
@@ -200,7 +179,6 @@ accelerate acellerate
 accept acept
 accept axcept
 accept except
-acceptable acceptable
 acceptable acceptably
 acceptable acceptiable
 acceptable acceptible
@@ -812,10 +790,6 @@ alive alife
 alive aliv
 all a
 all at
-all_right allright
-all_right alright
-all_right alwright
-all_sorts alsorts
 allocated alicated
 allotment allatmont
 allotment allottment
@@ -1040,7 +1014,6 @@ an am
 an and
 an on
 an un
-an_hour anhour
 analogous analagous
 analyse analiss
 analysed analised
@@ -1105,7 +1078,6 @@ animal animals
 animals animal
 animals aninals
 ankle ankel
-anniversary anniversary
 anniversary anerversary
 anniversary aneversary
 anniversary anirversary
@@ -1428,7 +1400,6 @@ any enyu
 any neny
 any ney
 any oay
-any_more anymore
 anybody enybody
 anyone enyone
 anything anythin
@@ -1839,7 +1810,6 @@ as is
 as saw
 as tes
 as was
-as_well aswell
 ascertain accertain
 ascertain acertain
 ascertain ascertaine
@@ -1898,7 +1868,6 @@ assistance assistence
 assistance assitance
 assistant assisstant
 associate associat
-associate associate
 associated assiciated
 associated assocaited
 associated assosiated
@@ -1921,8 +1890,6 @@ at al
 at an
 at as
 at att
-at_all atall
-at_least atleast
 ate aet
 athlete athlette
 athletic atheletic
@@ -2199,7 +2166,6 @@ backwards backwords
 bacon backen
 bacon baken
 bad bed
-bad_temper badtempar
 badge bage
 badges bages
 badly badle
@@ -2299,7 +2265,6 @@ basically baiscally
 basically basicly
 basin bassin
 basis bases
-basketball basketball
 basketball bascketball
 basketball baskball
 basketball baskeball
@@ -2793,7 +2758,6 @@ border bourder
 bore boar
 bore board
 bore boor
-bored bored
 bored board
 bored boarded
 bored boared
@@ -2869,8 +2833,6 @@ break brake
 break breach
 break breack
 break brock
-break-times breaktimes
-break_time breaktime
 breakfast breafast
 breakfast breakfest
 breakfast brekfast
@@ -2976,7 +2938,6 @@ built buildt
 built bult
 bull bool
 bullet bulet
-bulletin bulletin
 bulletin bullitoin
 bulletin bouletin
 bulletin buellitin
@@ -3023,7 +2984,6 @@ bump bunp
 bundle boundle
 bundle bundel
 bungalow bungalo
-bungalow bungalow
 bungalow bangalow
 bungalow bonglow
 bungalow boungalow
@@ -3165,8 +3125,6 @@ camphor campher
 can came
 can cane
 can con
-can't cant
-can't carnt
 cancel cancell
 cancel cansel
 cancellation canacellation
@@ -3201,7 +3159,6 @@ cancelled chanceled
 cancelling cancaling
 cancelling cancalling
 cancelling cancellan
-cancelling cancelling
 cancelling cancesling
 cancelling canciling
 cancelling cancleing
@@ -3327,7 +3284,6 @@ catalogue cataloge
 catalogue catologue
 catalogues catalogs
 catalogues catalogue
-catalogues catalogues
 catalogues calogues
 catalogues catalodges
 catalogues cataloge
@@ -3546,7 +3502,6 @@ cheese chease
 cheese chees
 chemical chemicall
 chemistry chemistrey
-chemistry chemistry
 chemistry remistry
 chemistry cemastry
 chemistry cemestry
@@ -3712,7 +3667,6 @@ clapped claped
 class clars
 class clas
 class glass
-class's classes
 classes clases
 classes class
 classes glasses
@@ -3772,7 +3726,6 @@ cloudy clody
 clown cloun
 club clob
 clubbed clubed
-co. com
 coach choach
 coach coache
 coach coch
@@ -4121,7 +4074,6 @@ complete compleat
 completed compleated
 completely completly
 completely complety
-completing completing
 completing complaning
 completing compleating
 completing complecting
@@ -4282,7 +4234,6 @@ congratulations congrulations
 congratulations congrutulations
 congress cnongress
 congress comgress
-congress congress
 congress cangress
 congress congeres
 congress congres
@@ -4652,7 +4603,6 @@ correct corect
 correct correcte
 correspond corraspond
 correspond corresond
-correspond correspond
 correspondence corespondance
 correspondence corespondence
 correspondence corespondences
@@ -4695,8 +4645,6 @@ cough caugh
 could cod
 could cood
 could coud
-couldn't couldent
-couldn't coundnt
 council counsel
 council countel
 counsel concel
@@ -5101,15 +5049,6 @@ customary custumery
 customary custurmary
 customer costomer
 customer costumer
-customer's coustomers
-customer's custimers
-customer's custmers
-customer's customars
-customer's customer
-customer's customers
-customer's customiers
-customer's custormers
-customer's custumers
 cut cat
 cutoff cutf
 cutting cuting
@@ -5119,12 +5058,10 @@ cylinder cilender
 cylinder cilinder
 cymbals cymbols
 cynical synical
-dad's dad
 daily daly
 dairy diary
 daisies daises
 daisy dasy
-damage damage
 damage dameage
 damage damadge
 damage damagage
@@ -5160,7 +5097,6 @@ damaged dammaged
 damaged danaged
 damaged daniged
 damaged danmaged
-damp damp
 dance danse
 dancing danceing
 dancing dansing
@@ -5290,7 +5226,6 @@ dear der
 dearest derest
 debate debait
 debate debat
-debit debit
 debit bevit
 debit dabet
 debit deabite
@@ -5469,7 +5404,6 @@ delayed delaid
 delegates delagates
 delegates delegalis
 delegates delegate
-delegates delegates
 delegates delagate
 delegates delagates
 delegates delecates
@@ -5550,7 +5484,6 @@ demands diemands
 democrat democrate
 dense dence
 dentist dentest
-deny deny
 deny dein
 deny demi
 deny demy
@@ -5741,9 +5674,6 @@ dictionary dictionery
 dictionary dictonary
 did ded
 did do
-did_not didnot
-didn't dident
-didn't dint
 die de
 die di
 die diy
@@ -5799,7 +5729,6 @@ dining dionig
 dining doning
 dining dying
 dining dyning
-dining-room diningroom
 dinner binnr
 dinner dener
 dinner denner
@@ -5830,7 +5759,6 @@ disappear dissapear
 disappear dissappear
 disappeared disappeard
 disappears dissappears
-disappoint disappoint
 disappoint desapoint
 disappoint desappoint
 disappoint desippoint
@@ -6013,13 +5941,10 @@ do drow
 do du
 do no
 do to
-do_not donnot
-do_not donot
 doctor docter
 doctors docters
 documents dockuments
 documents doctments
-documents documents
 documents doccuments
 documents docement
 documents docements
@@ -6079,9 +6004,6 @@ dollar dollor
 dollars dollers
 domestic domestick
 domestic domistic
-don't done
-don't donte
-don't dount
 done bon
 done bone
 done dan
@@ -6347,7 +6269,6 @@ eaten eatten
 eating eting
 eclipse ecipse
 econometric economtric
-economic economic
 economic ecanomic
 economic eccomic
 economic eccomomic
@@ -6380,7 +6301,6 @@ economical ecomomical
 economical ecomonical
 economical econnomical
 economical economal
-economical economical
 economical acknomical
 economical eaconomicl
 economical ecanomical
@@ -6418,7 +6338,6 @@ economical enomical
 economical equonomical
 economics ecomomics
 economics economic
-economics economics
 economics eccnomics
 economics ecconomics
 economics ecenomics
@@ -6545,7 +6464,6 @@ either ether
 elaborate elaberate
 elbow albow
 elbow elbo
-elbow-grease elbowgrease
 elderly eldely
 elect ellect
 elected ellected
@@ -6626,8 +6544,6 @@ eliminated elimiated
 elimination eleimination
 elimination elimiation
 else els
-else's elesers
-else's elss
 elsewhere elseware
 elsewhere elswhere
 eluded alluded
@@ -6661,7 +6577,6 @@ employ employe
 employ imploy
 employed emploied
 employee employe
-employees employees
 employees emploees
 employees emploes
 employees emploiees
@@ -6726,7 +6641,6 @@ enemies enimes
 enemies enimies
 enemies enmenies
 enemies enmies
-enemy enemy
 enemy ememey
 enemy ememy
 enemy emeny
@@ -6799,7 +6713,6 @@ entertain intertain
 entertained enterteyned
 entertainment entertament
 entertainment entertanment
-enthusiasm enthusiasm
 enthusiasm enqusiasm
 enthusiasm ensthusianm
 enthusiasm enthausiam
@@ -6928,7 +6841,6 @@ envy envey
 epistle epesale
 epistle ephisile
 epistle epistile
-epistle epistle
 epistle apistle
 epistle apostle
 epistle epicale
@@ -7151,12 +7063,10 @@ even eving
 even evn
 even evone
 even oven
-even_though eventhough
 evening eveing
 evening evning
 event avent
 eventuality eventuallity
-eventually eventually
 eventually aventially
 eventually aventually
 eventually edentually
@@ -7198,8 +7108,6 @@ every evey
 every evrey
 every evry
 every eyery
-every_day everyday
-every_time everytime
 everybody everbody
 everybody everebody
 everyone everone
@@ -7344,7 +7252,6 @@ existence exsintence
 existence exsistance
 existence exsistence
 existence exzistance
-exists exists
 exists axist
 exists eists
 exists erists
@@ -7466,7 +7373,6 @@ export exsport
 express experss
 express exspress
 expression expresion
-exquisite exquisite
 exquisite enquisit
 exquisite equisute
 exquisite excucisite
@@ -8086,7 +7992,6 @@ flying flyin
 flying frying
 fold foled
 fold fould
-folk folk
 folk falk
 folk foak
 folk foaks
@@ -8230,10 +8135,6 @@ form mom
 form rom
 form torn
 form vom
-form-mistress formistress
-form-mistress formmisstress
-form-mistress formmistress
-form-room formroom
 formed form
 formed formd
 formed fromed
@@ -8454,7 +8355,6 @@ functional funcional
 functionally functionaly
 functions functuions
 fund found
-fundamental fundamental
 fundamental fondemental
 fundamental fondmental
 fundamental foundimental
@@ -8580,7 +8480,6 @@ games game
 games gams
 gangs gang
 gangs ganges
-gaoler's gaolers
 garage garge
 garage grage
 gardener gardner
@@ -8640,7 +8539,6 @@ generous generious
 geneva geniva
 genii genei
 genius genious
-genius genius
 genius geanies
 genius geanios
 genius geenus
@@ -8670,7 +8568,6 @@ gentlemen gentelmen
 gentlemen gentleman
 genuinely genuinly
 geometry geometery
-geometry geometry
 geometry geomotery
 geometry geametry
 geometry gemeotry
@@ -8720,7 +8617,6 @@ girl guirl
 girls girl
 girls girles
 girls grils
-girls' girl
 give cife
 give gav
 give gave
@@ -8803,7 +8699,6 @@ goodness goodnes
 goods goodes
 goose goos
 goose gose
-gorgeous gorgeous
 gorgeous georgeous
 gorgeous georgious
 gorgeous georgous
@@ -9147,7 +9042,6 @@ had have
 had head
 had hed
 had hut
-hadn't hadnt
 hail hale
 hair daire
 hair haer
@@ -9278,22 +9172,18 @@ he hi
 he him
 he if
 he the
-he's his
 head had
 head haed
 head hed
 headache headace
 headmaster heardmaster
 headmaster hedmaster
-headmaster's headmaster
-headmaster's headmastes
 headmistress headmisstres
 headmistress headmisstress
 headmistress headmisteress
 headmistress headmisters
 headmistress headmistres
 headmistress headmistriss
-headmistress's headmistresses
 headquarters headquoters
 health helth
 healthy heathy
@@ -9396,7 +9286,6 @@ her he
 her here
 her hir
 her them
-her_a hera
 herd heard
 here har
 here hare
@@ -9431,14 +9320,12 @@ heuristics heuritics
 heyday heydey
 hid hide
 hide hid
-hide-out hidout
 hierarchical hierachial
 hierarchy heirarchy
 hierarchy hierchy
 high hie
 high hiegh
 high higth
-high-ranking highranking
 higher hier
 highest heightst
 highest hiest
@@ -9494,7 +9381,6 @@ hole hold
 holiday hoilday
 holiday holaday
 holiday holday
-holiday holiday
 holiday holliday
 hollow holow
 holy holey
@@ -9502,7 +9388,6 @@ holy holly
 home hom
 home homr
 home hone
-home-made homemade
 homely homley
 homely homly
 homesick homsick
@@ -9574,8 +9459,6 @@ house houe
 house houes
 house hous
 house houses
-house_point housepoint
-house_points housepoints
 households housholds
 houses hoses
 houses howses
@@ -9624,7 +9507,6 @@ hymn hym
 hymn hyme
 hymn hymm
 ice ise
-ice-cream icecream
 idea ide
 idea idear
 idea ideas
@@ -9645,7 +9527,6 @@ ignored egnorred
 ill ell
 ill il
 ill ills
-ill-behaved illbehaved
 illegible illegable
 illustrate ilustrate
 illustration illustartion
@@ -9765,11 +9646,6 @@ in if
 in im
 in is
 in it
-in_between inbetween
-in_case incase
-in_fact infact
-in_front infront
-in_to into
 inaccessible anaccessable
 inaccessible inaccesable
 inaccessible inaccesible
@@ -10017,7 +9893,6 @@ infallible infalable
 infant enfant
 infants enfants
 infants infant
-infants' enfants
 inferior inferier
 inferred infered
 infinite enfinate
@@ -10132,7 +10007,6 @@ injury injurey
 injury inury
 ink ing
 ink inke
-innocent innocent
 innocent inocent
 innocent ennocent
 innocent enocent
@@ -10172,7 +10046,6 @@ instant instent
 instant instint
 instantaneous instantanous
 instead insted
-instead_of insteadof
 institute instute
 institution instution
 instruct instruck
@@ -10252,7 +10125,6 @@ intended intene
 intended intened
 intended intented
 intention intension
-inter-schools interschools
 intercede intersede
 interest insteret
 interest interested
@@ -10336,7 +10208,6 @@ is in
 is it
 is si
 island iland
-isn't isant
 issue isue
 issued isued
 isthmus ismus
@@ -10346,10 +10217,7 @@ it i
 it il
 it is
 it its
-it's is
-it's it
 item tiem
-itemized itemized
 itemized itimized
 itemized itomised
 itemized atimized
@@ -10392,7 +10260,6 @@ itself itslef
 itself itsself
 ivory ivery
 jacket jaket
-jack-knife jacknife
 jaguar jagaur
 jail gail
 jail jale
@@ -10423,7 +10290,6 @@ jewel jewl
 jewelry jewelery
 jewelry jewlery
 job gob
-job job
 job jod
 job jub
 job juob
@@ -10526,7 +10392,6 @@ kind cind
 kind ciund
 kind kid
 kind kindly
-kindergarten kindergarten
 kindergarten cindergarten
 kindergarten gindergarden
 kindergarten kendergarden
@@ -10556,13 +10421,11 @@ kindly kinly
 kinds kins
 kiss kis
 kitchen kichen
-kitchen kitchen
 kitchen kitchin
 kite kit
 knee nee
 knew new
 knew now
-knick-knacks knicknacks
 knife kife
 knife kinfe
 knife kire
@@ -10983,7 +10846,6 @@ listen listern
 listened lisend
 listings listsings
 lists lsits
-literally literally
 literally laterally
 literally leteralaly
 literally leterally
@@ -11190,7 +11052,6 @@ lumber luber
 lump lomp
 lump lunp
 lunar lunur
-lunch-hour lunchhour
 luncheon lunchen
 luncheon lunchon
 lying lieing
@@ -11424,7 +11285,6 @@ materially miterialy
 materially mterially
 mates mattes
 mathematically mathematicaly
-mathematics mathematics
 mathematics matamatics
 mathematics matematics
 mathematics mathamactics
@@ -11488,7 +11348,6 @@ mechanic macanic
 mechanical machanical
 medal medel
 medal medle
-medical medical
 medicine medecine
 medicine medicen
 medicine medicene
@@ -11829,7 +11688,6 @@ mornings morings
 morsel morcel
 morsel morsal
 mortal mortle
-mortgage mortgage
 mortgage margage
 mortgage mogage
 mortgage morage
@@ -11950,19 +11808,6 @@ must most
 must mus
 must mush
 must nust
-mustn't musant
-mustn't musent
-mustn't musinit
-mustn't musnt
-mustn't mussnt
-mustn't mustant
-mustn't mustent
-mustn't mustnot
-mustn't mustnt
-mustn't mustny
-mustn't mustont
-mustn't mustunt
-mustn't musunt
 mutilate mutalate
 mutual meatual
 mutual meutral
@@ -12143,7 +11988,6 @@ neck nuck
 need nead
 need ned
 need needd
-need_not neednot
 needed neaded
 needed nedded
 needed need
@@ -12269,7 +12113,6 @@ ninetyninth nintynineth
 ninth nineth
 no know
 no on
-no-one knowone
 nobbled knobled
 noble nobel
 nobody nobudy
@@ -12369,8 +12212,6 @@ numerous numorous
 nurse nuse
 nursery nusey
 nut not
-o'clock clock
-o'clock oclock
 oak oke
 oats ots
 oats outs
@@ -12460,7 +12301,6 @@ of op
 of or
 of ov
 of ove
-of_course ofcourse
 off of
 off on
 offence affence
@@ -12505,7 +12345,6 @@ oil oill
 oil oll
 okay okaye
 old ald
-old-fashioned oldfashioned
 older oldr
 ominous omenous
 omission ommision
@@ -12519,7 +12358,6 @@ on no
 on of
 on onn
 on ons
-on_to onto
 once one
 once onece
 once ones
@@ -12533,7 +12371,6 @@ one onen
 one ont
 one won
 one woone
-one_day oneday
 onerous onirous
 ones one
 onion onin
@@ -12733,7 +12570,6 @@ organized orginized
 orientated orentated
 origin origen
 original origanal
-original original
 originally ariginaly
 originally arigionally
 originally eriganally
@@ -12904,7 +12740,6 @@ pamphlet paphlet
 pamphlet phamphet
 pamphlet phamphlet
 pamphlet phamplet
-pamphlets pamphlets
 pamphlets pamplets
 pamphlets panphelets
 pamphlets apanphlets
@@ -12942,7 +12777,6 @@ pantry pantree
 pantry pantrey
 papa papy
 paper papr
-paper_boats paperboats
 parade prade
 paraffin parrafin
 paragraph paragraf
@@ -12993,7 +12827,6 @@ particular particlar
 particular particler
 particular particualar
 particular particula
-particular particular
 particular particularly
 particular particulaur
 particular particuliar
@@ -13117,7 +12950,6 @@ people pople
 people porle
 pepper peper
 per pere
-per_cent persent
 perceive perceave
 perceive percede
 perceive perceeve
@@ -13255,7 +13087,6 @@ phenomenon penomenon
 phenomenon phenonenon
 philippines phillipines
 philology phlology
-philosophy philosophy
 philosophy phylosiphy
 philosophy phalosophy
 philosophy phelosophy
@@ -13295,7 +13126,6 @@ photography photograph
 physical phisical
 physician phician
 physician physican
-physician physician
 physician phician
 physician phicician
 physician phiscian
@@ -13383,14 +13213,6 @@ pilot poilet
 pilot polit
 pilot polot
 pilot polt
-pilot's pailots
-pilot's pilates
-pilot's pilets
-pilot's pilot
-pilot's pilotes
-pilot's pilts
-pilot's piolotes
-pilot's plots
 pine pin
 pinnacle pinacle
 pinnacle pinakle
@@ -13497,7 +13319,6 @@ plum plom
 plus pluse
 pneumonia pheumonia
 pneumonia phnumonia
-pneumonia pneumonia
 pneumonia nemonia
 pneumonia neumonia
 pneumonia newmonia
@@ -13717,7 +13538,6 @@ possible possibly
 possibly possible
 possibly possiply
 post past
-post_office postoffice
 postal postel
 postpone pospone
 postpone postphone
@@ -13903,17 +13723,6 @@ preserve preseve
 preserved perserved
 presided prisided
 president presedent
-president's president
-president's presidents
-president's precidents
-president's predsidents
-president's presdents
-president's presidencs
-president's presidends
-president's president
-president's presidentes
-president's presidents
-president's prisidents
 press prass
 pressure presure
 presume presum
@@ -14000,7 +13809,6 @@ primary primry
 primary primty
 principal principle
 principle principal
-principles principles
 principles priciples
 principles primcoples
 principles princaples
@@ -14130,7 +13938,6 @@ problem proplom
 problem proplum
 problem prroblem
 problems problem
-procedure procedure
 procedure precedure
 procedure procceedure
 procedure proceadure
@@ -14185,7 +13992,6 @@ proficiency proficiensy
 profit profet
 profit proffit
 profits proffits
-program program
 programmes programes
 progress progess
 progress proggress
@@ -14266,7 +14072,6 @@ proviso provisoe
 pseudonym pseudynom
 psychological psycological
 psychology phsycology
-psychology psychology
 psychology pcychology
 psychology phsychology
 psychology phychiology
@@ -14573,7 +14378,6 @@ received reived
 received reseved
 received resived
 received riceved
-receiver receiver
 receiver receaver
 receiver receever
 receiver received
@@ -14642,7 +14446,6 @@ reckon regon
 reckon rekon
 reckon rekson
 reclamation reclaimation
-recognition recognition
 recognition reccoenition
 recognition recednition
 recognition recegition
@@ -14735,7 +14538,6 @@ recommendation recomnondation
 recommendation recomondation
 recommendation reconmendation
 recommendations recommdations
-recommendations recommendations
 recommendations recamendations
 recommendations reccomendations
 recommendations reccommedations
@@ -14858,7 +14660,6 @@ refreshment refreshmant
 refreshment refreshmat
 refreshment refreshmeant
 refreshment refreshmen
-refreshment refreshment
 refreshment refreshments
 refreshment refreshmernt
 refreshment refreshmet
@@ -15193,7 +14994,6 @@ represent repesent
 representative representitive
 representatives represenatives
 representatives represenitives
-representatives representatives
 representatives repersentatives
 representatives repesentatives
 representatives represenatives
@@ -15476,7 +15276,6 @@ roll rol
 rolled rold
 rolled rolld
 rolling roling
-romantic romantic
 romantic romatic
 romantic remantic
 romantic reomentic
@@ -15840,7 +15639,6 @@ schedule sckedule
 schedule sechedule
 schedule shedule
 schedule skedule
-scheduled scheduled
 scheduled sceauled
 scheduled scedualed
 scheduled scedueled
@@ -16032,7 +15830,6 @@ secret serect
 secretaries secutaries
 secretary secatary
 secretary secratary
-secretary's secretary
 sections section
 secure sicure
 secure sucure
@@ -16050,7 +15847,6 @@ seeing seen
 seeing seening
 seeing sein
 seeing seing
-seeing_as seeings
 seek seak
 seem mem
 seem sam
@@ -16188,7 +15984,6 @@ several severeal
 several severl
 several sevral
 severe sever
-severe severe
 severely serverly
 severely sevearly
 severely severly
@@ -16530,8 +16325,6 @@ so som
 so some
 so sor
 so sow
-so-called socalled
-so_forth soforth
 soak soke
 soap sope
 sociable socable
@@ -16591,11 +16384,7 @@ solve slove
 some same
 some sane
 some so
-some_day someday
-some_other someother
-some_time sometime
 somebody sombody
-somebody's somebodies
 someone saneone
 someone somone
 someone sumone
@@ -16778,7 +16567,6 @@ special specel
 special specell
 special spechal
 special spechel
-special special
 special speciall
 special speciel
 special specil
@@ -16806,7 +16594,6 @@ special spiecil
 specialization sececialization
 specific pacific
 specific specifa
-specific specific
 specific pacific
 specific pecific
 specific pecifick
@@ -16867,7 +16654,6 @@ specifically speecificully
 specifically speficically
 specifically spesifically
 specifically spesificaly
-specimen specimen
 specimen specimens
 specimen sepcimen
 specimen sepecimen
@@ -17112,7 +16898,6 @@ station ststion
 station stusion
 stationary stationery
 stationery stationary
-statistics statistics
 statistics satistics
 statistics sestistics
 statistics setistics
@@ -17196,7 +16981,6 @@ stomach stoamac
 stomach stoamch
 stomach stoma
 stomach stomac
-stomach stomach
 stomach stomache
 stomach stomack
 stomach stomact
@@ -17357,7 +17141,6 @@ stupid stuped
 stupid stupied
 style stile
 stylish styleish
-sub-prefect subpreyfect
 subject subgect
 subject subjects
 subject subjuct
@@ -17513,7 +17296,6 @@ suits suite
 suits suites
 sum some
 summer sumer
-summerhouse summerhouse
 sums sum
 sums sume
 sun san
@@ -17876,11 +17658,9 @@ teachers teatchers
 teachers techers
 teachers tichers
 teachers treacher
-teachers' teaches
 teaching teching
 team teem
 team term
-team-mates teamates
 teams tem
 tear tair
 tear tare
@@ -18087,7 +17867,6 @@ that theat
 that thet
 that theut
 that vat
-that's that
 the hte
 the t
 the tehe
@@ -18166,7 +17945,6 @@ they ther
 they there
 they thir
 they thy
-they're there
 thick thik
 thief theaf
 thief thefe
@@ -18276,7 +18054,6 @@ three thee
 three there
 three threee
 three tree
-three_quarters threequaters
 threw throw
 throbbing throbing
 through throught
@@ -18353,7 +18130,6 @@ to the
 to too
 to tow
 to two
-to-day's todays
 toad toed
 toads roads
 toast tost
@@ -18412,7 +18188,6 @@ tonnage tunnage
 too to
 too tw
 too two
-too_much tomuch
 took look
 took tok
 took toke
@@ -18849,7 +18624,6 @@ unearthly unerthly
 unemployed enumployed
 unemployed unemploeyded
 unemployed unemploy
-unemployed unemployed
 unemployed unempoled
 unemployed unempolyed
 unemployed unenployed
@@ -18923,7 +18697,6 @@ unfortunate unfortuonate
 unfortunate unforunate
 unfortunate unfotunae
 unfortunate unfurtunate
-unfortunately unfortunately
 unfortunately unfortanately
 unfortunately unfortinately
 unfortunately unfortinatly
@@ -19302,7 +19075,6 @@ virtue virtuge
 virtue virture
 virtue vurtue
 virtue vurtued
-virtues virtues
 virtues firtues
 virtues vergues
 virtues vertue
@@ -19555,7 +19327,6 @@ we were
 we wey
 we when
 we wot
-we're where
 weak week
 wealth wealh
 wealth welth
@@ -19581,10 +19352,6 @@ weed weede
 weedy weedey
 week weak
 week wek
-week's weaks
-week's week
-week's weeks
-week's weks
 weekly weakly
 weeks week
 weigh wiegh
@@ -19622,7 +19389,6 @@ were wre
 were wree
 were wur
 were yer
-weren't werent
 west wast
 western westen
 what wait
@@ -19941,7 +19707,6 @@ world word
 world worde
 world would
 world wourld
-world's world
 worn warn
 worried woried
 worried worred
@@ -20046,7 +19811,6 @@ you your
 you yow
 you yoy
 you yuo
-you're your
 young yoand
 young yong
 young yorug
