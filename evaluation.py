@@ -18,9 +18,6 @@ def get_parser():
 
 
 
-
-
-
 def main():
     opts = get_parser().parse_args()
     checker = SpellChecker(Aligner(opts.sigma, opts.bayes))
@@ -33,7 +30,7 @@ def main():
         correct = i.strip().split(" ")[0]
         mis =  i.strip().split(" ")[1]
 
-        
+
         allpairs += 1
         fs = checker.give_suggestions(mis, opts.topk)
         if fs is not None:
