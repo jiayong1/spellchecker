@@ -1,7 +1,23 @@
-import pandas as pd
+import collections
+import re
+
 import nltk
-from tqdm import tqdm
+import pandas as pd
 from nltk.metrics.distance import edit_distance
+from tqdm import tqdm
+
+
+def train(text, model):
+	"""generate or update a word model (dictionary of word:frequency)"""
+	words = lambda text : re.findall('[a-z]+', text.lower())
+	for word in words(text):
+		model[word] += 1
+	return model
+
+
+model = collections.defaultdict(lambda: 0)
+model = train(open('data/words.txt').read(), model)
+real_words = set(model)
 
 # generate Test Dataset 
 
@@ -18,12 +34,8 @@ for i in tqdm(f):
 	if i[0] =="$":
 		correct = i[1:].lower().strip()
 	else:
-		if not (set(i.lower().strip()) - alphabet) and not (set(correct) - alphabet) and 0 < edit_distance(correct, i.lower().strip()) <= 2:
-			data = data.append({'Correct': correct, 'Misspelling':i.lower().strip()},ignore_index=True)
+		i = i.lower().strip()
+		if not (i in real_words) and not (set(i) - alphabet) and not (set(correct) - alphabet) and 0 < edit_distance(correct, i) <= 2:
+			data = data.append({'Correct': correct, 'Misspelling':i},ignore_index=True)
 
 data.to_csv( path_or_buf = 'data/testdata.txt' ,sep=' ', index=False, header=False )
-	
-
-
-
-
