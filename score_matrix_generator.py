@@ -1,11 +1,11 @@
+# Author: Jiayong Lin
 
-# coding: utf-8
+import difflib
 
-#Created by Jiayong Lin
 import numpy as np
 import pandas as pd
-import difflib
 import scipy.sparse
+
 
 #Compare two words and decide type of misspelling.
 def difference(incorrect, correct):
@@ -101,8 +101,3 @@ def generate_score_matrix(datapath):
     # print(scorematrix)
 
     np.save("scorematrix", scorematrix)
-
-
-        
-        
-

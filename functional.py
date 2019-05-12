@@ -1,7 +1,8 @@
+# Based on Nick Sweeting's Repo
+
 from itertools import product
 
 
-### UTILITY FUNCTIONS
 def numberofdupes(string, idx):
     """return the number of times in a row the letter at index idx is duplicated"""
     # "abccdefgh", 2  returns 1
@@ -11,7 +12,6 @@ def numberofdupes(string, idx):
         idx += 1
     return idx-initial_idx
 
-### POSSIBILITIES ANALYSIS
 
 def variants(word):
     """get all possible variants for a word"""
