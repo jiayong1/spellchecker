@@ -1,5 +1,7 @@
 # spellchecker
 
+- Authors: Hengduo Li, Jiayong Lin, Hanyu Wang.
+
 ![image](https://github.com/henrylee2570/701_spellchecker/raw/master/method.png)
 
 `cli_checker.py` provides an interactive command line interface for users to check their words.
