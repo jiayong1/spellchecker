@@ -29,7 +29,7 @@ python evaluation.py [-h] [-n N] [-k TOPK] [-s SIGMA] [--noBayes] [--onlyBayes] 
 
 optional arguments:
   -h, --help                show this help message and exit
-  -n N						randomly test on N words  
+  -n N                      randomly test on N words  
   -k TOPK, --topk TOPK      return top k canditates to pick
   -s SIGMA, --sigma SIGMA   gap score used in global alignment
   --noBayes                 don't apply Bayes rule.
