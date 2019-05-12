@@ -1,4 +1,5 @@
 # Author: Hanyu Wang
+# The Global Anigner class, provided Global Alignment using Needleman-Wunsch algorithm.
 
 import collections
 import os
@@ -8,6 +9,7 @@ import numpy as np
 from score_matrix_generator import generate_score_matrix
 
 
+# the Aligner class
 class Aligner:
     def __init__(self, sigma=5, bayes=True, onlyBayes=False):
         self.sigma = sigma
@@ -15,6 +17,7 @@ class Aligner:
         self.score = None
         self.freq_dict = None
 
+        # load score matrix, if it does not exist, generate it from data
         path='scorematrix.npy'
         if not os.path.isfile(path):
             generate_score_matrix('data/misspelling.txt')
@@ -22,7 +25,8 @@ class Aligner:
 
         if bayes:
             self.load_freq_dict()
-
+    
+    # score matrix loading function
     def load_score_mat(self, path='scorematrix.npy'):
         alphabet = 'abcdefghijklmnopqrstuvwxyz'
         mat = np.load(path)
@@ -34,7 +38,8 @@ class Aligner:
                 score[alphabet[i], alphabet[j]] = mat[i, j]
 
         self.score = score
-                
+
+    # load the word frequency dictionary        
     def load_freq_dict(self, path='data/frequency_dictionary_en_82_765.txt'):
         # https://github.com/wolfgarbe/SymSpell/blob/master/SymSpell/frequency_dictionary_en_82_765.txt
         freq_dict = {}
@@ -50,7 +55,7 @@ class Aligner:
         freq_dfdict.update(freq_dict)
         self.freq_dict = freq_dfdict
 
-
+    # global alignment algorithm
     def align(self, a:str, b:str) -> int:
         sigma, score = self.sigma, self.score
 
@@ -76,16 +81,18 @@ class Aligner:
         
         return pool[end][0]
 
+    # give topk final suggestions using global alignment and optional Bayes Re-weighting
     def final_suggestions(self, word:str, sug:set, topk=3) -> list:
         freq_dict = self.freq_dict
 
         if not self.onlyBayes:
-            # If freq_dict is None, do not apply Bayes rule.
             candidates = [(p_word, self.align(word, p_word)) for p_word in sug]
-
+            # if freq_dict is None, do not apply Bayes Re-weighting
             if freq_dict is not None:
                 freq_sum = sum(freq_dict[x[0]] for x in candidates)
                 candidates = [(x[0], x[1]*(freq_dict[x[0]]/freq_sum)) for x in candidates]
+
+        # if self.onlyBayes only apply Bayes Re-weighting
         else:
             freq_sum = sum(freq_dict[p_word] for p_word in sug)
             candidates = [(p_word, freq_dict[p_word]/freq_sum) for p_word in sug]
