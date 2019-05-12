@@ -1,4 +1,5 @@
 # Author: Hanyu Wang
+# A command line interface spell checker
 
 import argparse
 
@@ -6,6 +7,7 @@ from align import Aligner
 from checker_backend import SpellChecker
 
 
+# parse program arguments
 def get_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('-k', '--topk', type=int, default=3, help='return top k canditates to pick')
@@ -27,10 +29,10 @@ def main():
     while True:
         print('Please input your word:')
         word = str(input('> ')).strip().lower()
+        # check if word contains invalid characters
         if set(word) - alphabet:
             print('Error: your word contains invalid characters.')
         else:
-            # feed freq_dict into final_suggestions() to enable Bayes optimization
             fs = checker.give_suggestions(word, opts.topk)
             print('Possible word(s):')
             if opts.verbose:

@@ -18,7 +18,7 @@ class SpellChecker:
         self.real_words = set(self.model)
 
     def train(self, text):
-        """generate or update a word model (dictionary of word:frequency)"""
+        # generate or update a word model (dictionary of word:frequency)
         words = lambda text : re.findall('[a-z]+', text.lower())
         for word in words(text):
             self.model[word] += 1
@@ -27,10 +27,9 @@ class SpellChecker:
         for f in file_list:
             self.train(open(f).read())
 
-    # POSSIBILITY CHOOSING
+    # generate suggestions
     def suggestions(self, word, short_circuit=False):
-        """get best spelling suggestion for word
-        return on first match if short_circuit is true, otherwise collect all possible suggestions"""
+        # return on first match if short_circuit is true, otherwise collect all possible suggestions
         real_words = self.real_words
         word = word.lower()
         if short_circuit:   

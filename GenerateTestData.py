@@ -1,5 +1,4 @@
-
-#created by Jiayong Lin and Hanyu Wang.
+# Created by Jiayong Lin and Hanyu Wang.
 
 import collections
 import re
@@ -23,7 +22,6 @@ model = train(open('data/words.txt').read(), model)
 real_words = set(model)
 
 # generate Test Dataset 
-
 data = pd.DataFrame(columns = ["Correct", "Misspelling"])
 f = open("data/misspelling.txt", "r")
 j = 0
