@@ -8,7 +8,7 @@
 Usage of the interactive command line interface:
 
 ```
-python cli_checker.py [-h] [-k TOPK] [-s SIGMA] [--noBayes] [-v]
+python cli_checker.py [-h] [-k TOPK] [-s SIGMA] [--noBayes] [--onlyBayes] [-v]
 
 optional arguments:
   -h, --help                show this help message and exit
