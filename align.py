@@ -9,8 +9,9 @@ from score_matrix_generator import generate_score_matrix
 
 
 class Aligner:
-    def __init__(self, sigma=5, bayes=True):
-        self.sigma=sigma
+    def __init__(self, sigma=5, bayes=True, onlyBayes=False):
+        self.sigma = sigma
+        self.onlyBayes = onlyBayes
         self.score = None
         self.freq_dict = None
 
@@ -77,12 +78,17 @@ class Aligner:
 
     def final_suggestions(self, word:str, sug:set, topk=3) -> list:
         freq_dict = self.freq_dict
-        # If freq_dict is None, do not apply Bayes rule.
-        candidates = [(p_word, self.align(word, p_word)) for p_word in sug]
 
-        if freq_dict is not None:
-            freq_sum = sum(freq_dict[x[0]] for x in candidates)
-            candidates = [(x[0], x[1]*(freq_dict[x[0]]/freq_sum)) for x in candidates]
+        if not self.onlyBayes:
+            # If freq_dict is None, do not apply Bayes rule.
+            candidates = [(p_word, self.align(word, p_word)) for p_word in sug]
+
+            if freq_dict is not None:
+                freq_sum = sum(freq_dict[x[0]] for x in candidates)
+                candidates = [(x[0], x[1]*(freq_dict[x[0]]/freq_sum)) for x in candidates]
+        else:
+            freq_sum = sum(freq_dict[p_word] for p_word in sug)
+            candidates = [(p_word, freq_dict[p_word]/freq_sum) for p_word in sug]
 
         return sorted(candidates, key=lambda x: x[1], reverse=True)[:topk]
 
@@ -92,6 +98,6 @@ if __name__ == "__main__":
     sc = SpellChecker(Aligner())
     # a = Aligner()
     while True:
-        word = str(input('>'))
+        word = str(input('> '))
         fs = sc.give_suggestions(word, topk=10)
         print(fs)

@@ -11,8 +11,9 @@ def get_parser():
     parser.add_argument('-k', '--topk', type=int, default=3, help='return top k canditates to pick')
     parser.add_argument('-s', '--sigma', type=int, default=5, help='gap score used in global alignment')
     parser.add_argument('--noBayes', action='store_false', dest='bayes',
-                        default=True,
-                        help='don\'t apply Bayes rule.')
+                        default=True, help='don\'t apply Bayes rule.')
+    parser.add_argument('--onlyBayes', action='store_true', dest='onlyb',
+                        default=False, help='only ues Bayes rule(no global alignment).')
     parser.add_argument('-v', '--verbose', action='store_true', dest='verbose',
                         default=False, help='verbose mode on')
     return parser
@@ -20,7 +21,7 @@ def get_parser():
 
 def main():
     opts = get_parser().parse_args()
-    checker = SpellChecker(Aligner(opts.sigma, opts.bayes))
+    checker = SpellChecker(Aligner(opts.sigma, opts.bayes, opts.onlyb))
     alphabet = set('abcdefghijklmnopqrstuvwxyz')
 
     while True:
