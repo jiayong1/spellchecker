@@ -18,6 +18,8 @@ def get_parser():
     parser.add_argument('--noBayes', action='store_false', dest='bayes',
                         default=True,
                         help='don\'t apply Bayes rule.')
+    parser.add_argument('--onlyBayes', action='store_true', dest='onlyb',
+                        default=False, help='only ues Bayes rule(no global alignment).')
     parser.add_argument('-v', '--verbose', action='store_true', dest='verbose',
                         default=False,
                         help='verbose')
@@ -30,7 +32,7 @@ def main():
     opts = get_parser().parse_args()
     n = opts.n
     checker = SpellChecker(Aligner(opts.sigma, opts.bayes))
-    #f = open("data/testdata.txt", "r")
+    # record top 1, 2, 3 accuracy 
     top1=top2=top3 = 0
     allpairs = 0
 
