@@ -11,11 +11,12 @@ Usage of the interactive command line interface:
 python cli_checker.py [-h] [-k TOPK] [-s SIGMA] [--noBayes] [-v]
 
 optional arguments:
-  -h, --help               show this help message and exit
-  -k TOPK, --topk TOPK     return top k candidates to pick
-  -s SIGMA, --sigma SIGMA  gap score used in global alignment
-  --noBayes                don't apply Bayes rule.
-  -v, --verbose            verbose mode on
+  -h, --help                show this help message and exit
+  -k TOPK, --topk TOPK      return top k canditates to pick
+  -s SIGMA, --sigma SIGMA   gap score used in global alignment
+  --noBayes                 don't apply Bayes rule.
+  --onlyBayes               only ues Bayes rule(no global alignment).
+  -v, --verbose             verbose mode on
 ```
 
 ## Example
