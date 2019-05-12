@@ -1,3 +1,4 @@
+# Functions used in Proposal stage of the spell checker.
 # Based on Nick Sweeting's Repo
 # Modified by Hanyu Wang, Hengduo Li
 

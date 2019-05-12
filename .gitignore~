@@ -1,5 +1,3 @@
 scorematrix.npy
 .vscode
 __pycache__
-
-*.pyc
