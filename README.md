@@ -1,5 +1,7 @@
 # spellchecker
 
+![image](http://github.com/henrylee2570/701_spellchecker/raw/master/sc_method.pdf)
+
 `cli_checker.py` provides an interactive command line interface for users to check their words.
 
 `checker_backend.py` implements the spellchecker backend `SpellChecker` that can be used in other python programs.
