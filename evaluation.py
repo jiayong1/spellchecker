@@ -1,11 +1,15 @@
+# Author: Jiayong Lin
+
 import argparse
 from checker_backend import SpellChecker
 from align import Aligner
 from tqdm import tqdm
+import pandas as pd
 
 
 def get_parser():
     parser = argparse.ArgumentParser()
+    parser.add_argument('-n', '--topn', type=int, dest='n', default=1000, help='Ramdomly test on n words.')
     parser.add_argument('-k', '--topk', type=int, default=3, help='return top k canditates to pick')
     parser.add_argument('-s', '--sigma', type=int, default=5, help='gap score used in global alognment')
     parser.add_argument('--noBayes', action='store_false', dest='bayes',
@@ -19,40 +23,40 @@ def get_parser():
 
 
 def main():
-    opts = get_parser().parse_args()
-    checker = SpellChecker(Aligner(opts.sigma, opts.bayes))
-    alphabet = set('abcdefghijklmnopqrstuvwxyz')
 
-    f = open("data/testdata.txt", "r")
+    opts = get_parser().parse_args()
+    n = opts.n
+    checker = SpellChecker(Aligner(opts.sigma, opts.bayes))
+    #f = open("data/testdata.txt", "r")
     top1=top2=top3 = 0
     allpairs = 0
-    for i in tqdm(f):
-        correct = i.strip().split(" ")[0]
-        mis =  i.strip().split(" ")[1]
 
 
+    data = pd.read_csv('data/testdata.txt', sep=" ", header=None)
+    data.columns = ["correct", "mis"]
+    subdata = data.sample(n = n) 
+
+    for index, row in tqdm(subdata.iterrows()):
         allpairs += 1
-        fs = checker.give_suggestions(mis, opts.topk)
+        fs = checker.give_suggestions(row["mis"], opts.topk)
         if fs is not None:
             resultlist = [row[0] for row in fs]
-            if correct.strip() == resultlist[0]:
+            if row["correct"].strip() == resultlist[0]:
                 top1 += 1 
                 top2 += 1
                 top3 += 1
-            elif len(resultlist) >= 2 and correct.strip() == resultlist[1] :
+            elif len(resultlist) >= 2 and row["correct"].strip() == resultlist[1] :
                 top2 += 1
                 top3 += 1
-            elif len(resultlist) == 3 and correct.strip() == resultlist[2] :
+            elif len(resultlist) == 3 and row["correct"].strip() == resultlist[2] :
                 top3 += 1
 
 
 
-    print(top1 / allpairs)
-    print(top2 / allpairs)
-    print(top3 / allpairs)
-    print("--------------------")
-
-
+    print("Top 1 precision: ", top1 / allpairs)
+    print("Top 2 precision: ", top2 / allpairs)
+    print("Top 3 precision: ", top3 / allpairs)
+    print("-----------------------------------------")
 
 
 
