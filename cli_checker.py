@@ -1,6 +1,9 @@
+# Author: Hanyu Wang
+
 import argparse
-from checker_backend import SpellChecker
+
 from align import Aligner
+from checker_backend import SpellChecker
 
 
 def get_parser():

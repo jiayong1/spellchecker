@@ -1,9 +1,12 @@
+# Based on Nick Sweeting's Repo
+# Authors: Hengduo Li, Hanyu Wang
 
 import collections
 import os
 import pdb
 import re
-from functional import variants, double_variants, reductions, vowelswaps, both
+
+from functional import both, double_variants, reductions, variants, vowelswaps
 
 
 class SpellChecker:
@@ -24,14 +27,13 @@ class SpellChecker:
         for f in file_list:
             self.train(open(f).read())
 
-    ### POSSIBILITY CHOOSING
-
+    # POSSIBILITY CHOOSING
     def suggestions(self, word, short_circuit=False):
         """get best spelling suggestion for word
         return on first match if short_circuit is true, otherwise collect all possible suggestions"""
         real_words = self.real_words
         word = word.lower()
-        if short_circuit:   # setting short_circuit makes the spellchecker much faster, but less accurate in some cases
+        if short_circuit:   
             return ({word}                      & real_words or   #  caps     "inSIDE" => "inside"
                     set(reductions(word))       & real_words or   #  repeats  "jjoobbb" => "job"
                     set(vowelswaps(word))       & real_words or   #  vowels   "weke" => "wake"
@@ -59,4 +61,3 @@ if __name__ == "__main__":
         word = str(input('>'))
         fs = sc.give_suggestions(word, topk=10)
         print(fs)
-

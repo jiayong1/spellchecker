@@ -1,8 +1,10 @@
-# Created by Hanyu Wang
+# Author: Hanyu Wang
 
 import collections
 import os
+
 import numpy as np
+
 from score_matrix_generator import generate_score_matrix
 
 
@@ -93,4 +95,3 @@ if __name__ == "__main__":
         word = str(input('>'))
         fs = sc.give_suggestions(word, topk=10)
         print(fs)
-

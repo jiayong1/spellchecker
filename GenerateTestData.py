@@ -1,3 +1,5 @@
+# Author: Jiayong Lin
+
 import collections
 import re
 

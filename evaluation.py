@@ -1,7 +1,11 @@
+# Authors: Jiayong Lin, Hengduo Li
+
 import argparse
-from checker_backend import SpellChecker
-from align import Aligner
+
 from tqdm import tqdm
+
+from align import Aligner
+from checker_backend import SpellChecker
 
 
 def get_parser():
@@ -58,4 +62,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
